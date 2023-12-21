@@ -1,0 +1,288 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+.container {
+    width: 100%; /* Chiếm đủ không gian chiều rộng của phần tử cha */
+    height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
+    overflow: auto; /* Cho phép cuộn nếu cần */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    font-family: 'Calibri', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+#iframe-container {
+    width: 100%; /* Chiếm đủ không gian chiều rộng của phần tử cha */
+    height: auto; /* Chiều cao phụ thuộc vào nội dung, không cố định */
+    overflow: auto; /* Cho phép cuộn nếu cần */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    position: relative;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: 100;
+    background-color: rgba(0, 0, 0); /* Optional: for semi-transparent background */
+}
+
+#loading-gif {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 8px; /* Bạn có thể điều chỉnh chiều rộng này */
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #555; /* Màu đen cho phần tự di chuyển của thanh cuộn */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Bạn có thể đặt màu khác khi di chuột qua phần tự di chuyển của thanh cuộn */
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+header {
+    background-color: #000;
+    padding: 5px;
+    height: 50px; 
+    border-bottom: 1px solid rgb(167, 165, 165);
+    display: flex;         
+    align-items: center; 
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header_panel {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    font-size: 18px;
+    padding: 5px 30px;
+    margin: 10px;
+    border: 2px solid transparent; /* Viền trong suốt khi không hover */
+    border-radius: 50px; /* Bo tròn để tạo hình capsule */
+    background-color: transparent; /* Nền trong suốt */
+    color: white; /* Màu của chữ, thay đổi nếu cần */
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s; /* Hiệu ứng mượt mà */
+}
+
+.nav-btn:hover {
+    border-color: #2A2A2A; 
+    background-color: #2A2A2A;
+}
+
+.logo-container {
+    position: absolute; /* Đặt logo ra khỏi luồng bố cục thông thường */
+    left: 30px; /* Đặt logo sát mép trái */
+    top: 50%; 
+    transform: translateY(-50%); /* Căn giữa logo theo chiều dọc */
+}
+
+#header-logo {
+    height: 50px;
+}
+
+.logout-container {
+    position: absolute; /* Đặt logo ra khỏi luồng bố cục thông thường */
+    right: 10px; /* Đặt logo sát mép trái */
+    top: 50%; 
+    transform: translateY(-50%); /* Căn giữa logo theo chiều dọc */
+}
+
+.logout-btn {
+    height: 50px;
+}
+
+.logout-container a {
+    display: flex;
+    align-items: center; /* Đảm bảo text và hình ảnh cùng căn giữa theo chiều dọc */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: white; /* Kế thừa màu chữ từ phần tử cha */
+    font-family: 'Calibri', sans-serif;
+    font-size: 18px;
+}
+
+.logout-container a p {
+    color: white; /* Kế thừa màu chữ từ phần tử cha */
+    font-family: 'Calibri', sans-serif;
+    font-size: 18px;
+}
+
+/* CSS Responsive cho mobile */
+@media (max-width: 1400px) {
+    header {
+        padding: 10px 20px; /* Giảm padding */
+        height: 35px; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    .nav-btn {
+        font-size: 16px; /* Giảm kích thước font chữ */
+        padding: 0 20px; /* Giảm padding giữa các liên kết */
+    }
+
+    #header-logo {
+        height: 45px; /* Giảm kích thước logo */
+    }
+
+    .logout-container {
+        right: 20px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+    
+    .logout-btn {
+        height: 45px;
+    }
+
+    .logout-container a p {
+        font-size: 16px;
+    }
+}
+
+/* CSS Responsive cho mobile */
+@media (max-width: 1200px) {
+    header {
+        padding: 10px 20px; /* Giảm padding */
+        height: 25; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    .nav-btn {
+        font-size: 14px; /* Giảm kích thước font chữ */
+        padding: 0 15px; /* Giảm padding giữa các liên kết */
+    }
+
+    .logo-container {
+        left: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+
+    #header-logo {
+        height: 35px; /* Giảm kích thước logo */
+    }
+
+    .logout-container {
+        right: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+    
+    .logout-btn {
+        height: 35px;
+    }
+
+    .logout-container a p {
+        font-size: 14px;
+    }
+}
+
+/* CSS Responsive cho mobile */
+@media (max-width: 1000px) {
+    header {
+        padding: 5px 10px; /* Giảm padding */
+        height: 25; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    .nav-btn {
+        font-size: 12px; /* Giảm kích thước font chữ */
+        padding: 0 5px; /* Giảm padding giữa các liên kết */
+        margin: 5px;
+    }
+
+    .logo-container {
+        left: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+
+    #header-logo {
+        height: 35px; /* Giảm kích thước logo */
+    }
+
+    .logout-container {
+        right: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+
+    .logout-container a p {
+        font-size: 12px;
+    }
+    
+    .logout-btn {
+        height: 30px;
+    }
+}
+
+/* CSS Responsive cho mobile */
+@media (max-width: 800px) {
+    header {
+        padding: 0px 5px; /* Giảm padding */
+        height: auto; /* Cho phép chiều cao tự điều chỉnh */
+    }
+    
+    .nav-btn {
+        font-size: 8px; /* Giảm kích thước font chữ */
+        padding: 0 5px; /* Giảm padding giữa các liên kết */
+        margin: 3px;
+        height: 30px;
+        width: 64px;
+    }
+
+    .logo-container {
+        left: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+
+    #header-logo {
+        display: none;
+    }
+
+    .logout-container {
+        right: 10px; /* Điều chỉnh logo gần mép hơn */
+        transform: translateY(-50%);
+    }
+    
+    .logout-btn {
+        height: 20px;
+    }
+
+    .logout-container a p {
+        display: none;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */

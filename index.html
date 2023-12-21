@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T2M Invest</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var loggedIn = localStorage.getItem('loggedIn');
+            if (loggedIn) {
+                window.location.href = 'tong_quan_thi_truong.html';
+            } else {
+                window.location.href = 'trial.html';
+            }
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
