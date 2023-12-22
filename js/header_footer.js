@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <img src="photo/slogo.png" alt="T2M Logo" class="footer-logo">
                     </a>
                     <div class="footer-links">
-                        <a href="disclaimers.html">Tuyên bố trách nhiệm - T2M Invest</a>
+
                     </div>
                 </div>
         
@@ -59,23 +59,21 @@ document.addEventListener('DOMContentLoaded', function () {
                     <p class="footer-title">Hỗ trợ</p>
 
                     <div class="social-logo">
-                        <a href="https://www.facebook.com/t2m.invest"><img src="photo/fb_logo.png" alt="T2M Logo"></a>
-                        <a href="https://t.me/+U3k02NxS8ygwMGE1"><img src="photo/tele_logo.png" alt="T2M Logo"></a>
-                        <a href="https://zalo.me/0338662238"><img src="photo/zalo_logo.png" alt="T2M Logo"></a>
+                        <img src="photo/zalo_logo.png" alt="T2M Logo">
+                        <a> Zalo: (+84) 338 662 238 </a>
                     </div>
   
-                    <p id="call-to-action"> Tham gia cộng đồng đầu tư T2M Invest </p>
+                    <p id="call-to-action"> Tham gia cộng đồng T2M Invest </p>
                     <div class="social-qr">
-                        <img src="photo/fb_qr.png" alt="T2M Logo">
-                        <img src="photo/tele_qr.png" alt="T2M Logo">
-                        <img src="photo/zalo_qr.png" alt="T2M Logo">
+                        <a href="https://www.facebook.com/t2m.invest"><img src="photo/fb_qr.png" alt="T2M Logo"></a>
+                        <a href="https://t.me/+U3k02NxS8ygwMGE1"><img src="photo/tele_qr.png" alt="T2M Logo"></a>
                     </div>
 
                 </div>
             
             </div>
             <div class="footer-bottom">
-            <p>© 2023 T2M Invest | Liên hệ: (+84) 338 662 238</p>
+            <p>© 2023 T2M Invest | <a href="disclaimers.html">Tuyên bố trách nhiệm</a></p>
             </div>
         </footer>
     `;
