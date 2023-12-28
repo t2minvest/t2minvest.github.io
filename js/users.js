@@ -37,6 +37,9 @@ var users = {
     "chuphuonganh241003@gmail.com":"c99735",
     "phuongthao9x1010@gmail.com":"p38837",
     "huykhoai2002@gmail.com":"h68638",
+    "tranmaii2603@gmail.com":"t52539",
+    "quanly3210@gmail.com":"q29840",
+    "thuy.bui.mizu@gmail.com":"t68841",
     
     "admin":"t2madmin1123"
 };
