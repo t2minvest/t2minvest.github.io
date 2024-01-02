@@ -40,6 +40,10 @@ var users = {
     "tranmaii2603@gmail.com":"t52539",
     "quanly3210@gmail.com":"q29840",
     "thuy.bui.mizu@gmail.com":"t68841",
+    "thaiquy85@gmail.com":"t94843",
+    "kienmai 2008@gmail.com":"k59944",
+    "tranquymai@gmail.com":"t98945",
+    "vivi.jan07@gmail.com":"v38646",
     
     "admin":"t2madmin1123"
 };
