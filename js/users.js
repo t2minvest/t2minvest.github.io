@@ -54,6 +54,8 @@ var users = {
     "manh.chuduc@gmail.com":"m95553",
     "congnt91@gmail.com":"c86954",
     "buitrungthanh.mg@gmail.com":"b03355",
+    "truongbui2010@gmail.com":"t68856",
+    "nhatrangmuathu668@gmail.com":"n88357",
     
     "admin":"t2madmin1123"
 };
