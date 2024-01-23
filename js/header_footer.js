@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <a><img src="photo/zalo_qr.png" alt="T2M Logo"></a>
                             <a class="qr-description" id="qr_5">Zalo</a>
                             <br>
-                            <a class="qr-description" id="qr_6">(+84) 338 662 238</a>
+                            <a class="qr-description" id="qr_6">(+84) 368 075 410</a>
                         </div>
                     </div>
 
