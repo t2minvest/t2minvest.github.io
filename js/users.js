@@ -61,6 +61,7 @@ var users = {
     "thedinh5694@gmail.com":"t83060",
     "sunnyloan@gmail.com":"s77961",
     "thuynt1412@gmail.com":"t05762",
+    "vietdanhdh@gmail.com":"v18663",
     
     "admin":"t2madmin1123"
 };
