@@ -64,6 +64,9 @@ var users = {
     "vietdanhdh@gmail.com":"v18663",
     "duchieu6289@gmail.com":"d28964",
     "phamtuantu2430@gmail.com":"p49365",
+    "quangminh200415@gmail.com":"q94066
+    "thaihungcm@gmail.com":"t78867",
+    "doanthuan81@gmail.com":"d93468",
     
     "admin":"t2madmin1123"
 };
