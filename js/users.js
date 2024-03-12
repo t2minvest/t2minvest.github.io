@@ -68,5 +68,5 @@ var users = {
     "thaihungcm@gmail.com":"t78867",
     "doanthuan81@gmail.com":"d93468",
     
-    "admin":"t2madmin1123"
+    "admin":"t2minvest123"
 };
