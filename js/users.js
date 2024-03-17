@@ -70,6 +70,7 @@ var users = {
     "minhtu.nguyen161@gmail.com":"m68870",
     "hailinh1186@gmail.com":"h66271",
     "maikhachaiittr@gmail.com":"m33372",
+    "tanpv83@gmail.com":"t55473",
     
     "admin":"t2minvest123"
 };
