@@ -78,6 +78,8 @@ var users = {
     "lephuonglp@gmail.com":"l67677",
     "yenvh.klb@gmail.com":"y63378",
     "huynhtuan11818@gmail.com":"h96879",
+    "k43.cntt@gmail.com":"k14480",
+    "mrtran280287@gmail.com":"m79581",
     
     "admin":"t2minvest123"
 };
